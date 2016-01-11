@@ -18,14 +18,14 @@ namespace Asteroid_Belt_Assault
         public ShotManager EnemyShotManager;
         private PlayerManager playerManager;
 
-        public int MinShipsPerWave = 5;
-        public int MaxShipsPerWave = 8;
+        public int MinShipsPerWave = 999;
+        public int MaxShipsPerWave = 999;
         private float nextWaveTimer = 0.0f;
-        private float nextWaveMinTimer = 8.0f;
+        private float nextWaveMinTimer = 5.0f;
         private float shipSpawnTimer = 0.0f;
         private float shipSpawnWaitTime = 0.5f;
 
-        private float shipShotChance = 0.2f;
+        private float shipShotChance = 1.0f;
 
         private List<List<Vector2>> pathWaypoints =
             new List<List<Vector2>>();

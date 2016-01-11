@@ -41,6 +41,18 @@ namespace Asteroid_Belt_Assault
             }
         }
 
+        public static void PlayExplosion(int explosion)
+        {
+            try
+            {
+                explosions[explosion % explosions.Count].Play();
+            }
+            catch
+            {
+                Debug.Write("PlayExplosion Failed");
+            }
+        }
+
         public static void PlayExplosion()
         {
             try

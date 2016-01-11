@@ -44,6 +44,8 @@ namespace Asteroid_Belt_Assault
                         explosionManager.AddExplosion(
                             enemy.EnemySprite.Center,
                             enemy.EnemySprite.Velocity / 10);
+
+                        SoundManager.PlayExplosion();
                     }
 
                 }
@@ -80,6 +82,8 @@ namespace Asteroid_Belt_Assault
                     explosionManager.AddExplosion(
                         playerManager.playerSprite.Center,
                         Vector2.Zero);
+
+                    SoundManager.PlayExplosion(0);
                 }
             }
         }
@@ -124,6 +128,7 @@ namespace Asteroid_Belt_Assault
                     explosionManager.AddExplosion(
                         playerManager.playerSprite.Center,
                         Vector2.Zero);
+                    SoundManager.PlayExplosion(4);
                 }
             }
         }

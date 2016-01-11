@@ -77,27 +77,27 @@ namespace Asteroid_Belt_Assault
 
         private void HandleKeyboardInput(KeyboardState keyState)
         {
-            if (keyState.IsKeyDown(Keys.Up))
+            if (keyState.IsKeyDown(Keys.W))
             {
                 playerSprite.Velocity += new Vector2(0, -1);
             }
 
-            if (keyState.IsKeyDown(Keys.Down))
+            if (keyState.IsKeyDown(Keys.S))
             {
                 playerSprite.Velocity += new Vector2(0, 1);
             }
 
-            if (keyState.IsKeyDown(Keys.Left))
+            if (keyState.IsKeyDown(Keys.A))
             {
                 playerSprite.Velocity += new Vector2(-1, 0);
             }
 
-            if (keyState.IsKeyDown(Keys.Right))
+            if (keyState.IsKeyDown(Keys.D))
             {
                 playerSprite.Velocity += new Vector2(1, 0);
             }
 
-            if (keyState.IsKeyDown(Keys.Space))
+            if (keyState.IsKeyDown(Keys.Enter))
             {
                 FireShot();
             }
