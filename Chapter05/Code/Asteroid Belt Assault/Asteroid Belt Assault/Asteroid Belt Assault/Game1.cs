@@ -300,10 +300,10 @@ namespace Asteroid_Belt_Assault
             {
                 spriteBatch.DrawString(
                     pericles14,
-                    "G A M E  O V E R !",
+                    "GET REKT NERD!",
                     new Vector2(
                         this.Window.ClientBounds.Width / 2 -
-                          pericles14.MeasureString("G A M E  O V E R !").X / 2,
+                          pericles14.MeasureString("GET REKT NERD").X / 2,
                         50),
                     Color.White);
             }
