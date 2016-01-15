@@ -75,6 +75,8 @@ namespace Asteroid_Belt_Assault
 
             titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
             spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
+            Song song = Content.Load<Song>(@"Sounds\song");  // Put the name of your song in instead of "song_title"
+            MediaPlayer.Play(song);
 
             starField = new StarField(
                 this.Window.ClientBounds.Width,

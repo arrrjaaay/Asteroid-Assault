@@ -57,7 +57,7 @@ namespace Asteroid_Belt_Assault
         {
             try
             {
-                explosions[rand.Next(0, explosionCount)].Play();
+                explosions[rand.Next(1, explosionCount)].Play();
             }
             catch
             {
