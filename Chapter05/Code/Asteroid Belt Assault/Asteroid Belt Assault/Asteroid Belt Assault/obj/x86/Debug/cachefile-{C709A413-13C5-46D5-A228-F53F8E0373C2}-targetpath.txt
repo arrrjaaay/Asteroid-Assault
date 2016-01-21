@@ -10,3 +10,5 @@ Content\Fonts\Pericles14.xnb
 Content\Textures\StarFoxSprite.xnb
 Content\Sounds\song.xnb
 Content\Sounds\song.wma
+Content\Textures\GameScreen.xnb
+Content\Textures\dunk.xnb

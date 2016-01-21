@@ -23,6 +23,8 @@ namespace Asteroid_Belt_Assault
         GameStates gameState = GameStates.TitleScreen;
         Texture2D titleScreen;
         Texture2D spriteSheet;
+        Texture2D gamescreen;
+        Texture2D dunk;
 
         StarField starField;
         AsteroidManager asteroidManager;
@@ -40,9 +42,9 @@ namespace Asteroid_Belt_Assault
         private float titleScreenDelayTime = 1f;
 
         private int playerStartingLives = 3;
-        private Vector2 playerStartLocation = new Vector2(390, 550);
-        private Vector2 scoreLocation = new Vector2(20, 10);
-        private Vector2 livesLocation = new Vector2(20, 25);
+        private Vector2 playerStartLocation = new Vector2(400, 600);
+        private Vector2 scoreLocation = new Vector2(600, 10);
+        private Vector2 livesLocation = new Vector2(600, 25);
 
 
         public Game1()
@@ -75,6 +77,8 @@ namespace Asteroid_Belt_Assault
 
             titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
             spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
+            dunk = Content.Load<Texture2D>(@"Textures\dunk");
+            gamescreen = Content.Load<Texture2D>(@"Textures\GameScreen");
             Song song = Content.Load<Song>(@"Sounds\song");  // Put the name of your song in instead of "song_title"
             MediaPlayer.Play(song);
 
@@ -87,10 +91,10 @@ namespace Asteroid_Belt_Assault
                 new Rectangle(0, 450, 2, 2));
 
             asteroidManager = new AsteroidManager(
-                10,
-                spriteSheet,
-                new Rectangle(0, 0, 50, 50),
-                20,
+                100,
+                dunk,
+                new Rectangle(0, 0, 40, 40),
+                1,
                 this.Window.ClientBounds.Width,
                 this.Window.ClientBounds.Height);
 
@@ -202,7 +206,7 @@ namespace Asteroid_Belt_Assault
 
                     if (playerManager.Destroyed)
                     {
-                        playerDeathTimer = 0f;
+                        playerDeathTimer = 1.0f;
                         enemyManager.Active = false;
                         playerManager.LivesRemaining--;
                         if (playerManager.LivesRemaining < 0)
@@ -275,6 +279,11 @@ namespace Asteroid_Belt_Assault
                 (gameState == GameStates.PlayerDead) ||
                 (gameState == GameStates.GameOver))
             {
+                spriteBatch.Draw(gamescreen,
+                    new Rectangle(0, 0, this.Window.ClientBounds.Width,
+                        this.Window.ClientBounds.Height),
+                        Color.White);
+
                 starField.Draw(spriteBatch);
                 asteroidManager.Draw(spriteBatch);
                 playerManager.Draw(spriteBatch);
@@ -291,7 +300,7 @@ namespace Asteroid_Belt_Assault
                 {
                     spriteBatch.DrawString(
                         pericles14,
-                        "Ships Remaining: " +
+                        "Lives Remaining: " +
                             playerManager.LivesRemaining.ToString(),
                         livesLocation,
                         Color.White);
