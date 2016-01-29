@@ -24,7 +24,6 @@ namespace Asteroid_Belt_Assault
         Texture2D titleScreen;
         Texture2D spriteSheet;
         Texture2D gamescreen;
-        Texture2D dunk;
 
         StarField starField;
         AsteroidManager asteroidManager;
@@ -77,7 +76,7 @@ namespace Asteroid_Belt_Assault
 
             titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
             spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
-            dunk = Content.Load<Texture2D>(@"Textures\dunk");
+
             gamescreen = Content.Load<Texture2D>(@"Textures\GameScreen");
             Song song = Content.Load<Song>(@"Sounds\song");  // Put the name of your song in instead of "song_title"
             MediaPlayer.Play(song);
@@ -91,8 +90,8 @@ namespace Asteroid_Belt_Assault
                 new Rectangle(0, 450, 2, 2));
 
             asteroidManager = new AsteroidManager(
-                100,
-                dunk,
+                10,
+                spriteSheet,
                 new Rectangle(0, 0, 40, 40),
                 1,
                 this.Window.ClientBounds.Width,
@@ -100,7 +99,7 @@ namespace Asteroid_Belt_Assault
 
             playerManager = new PlayerManager(
                 spriteSheet,    
-                new Rectangle(154, 155, 67, 46),    
+               new Rectangle(5, 55, 38, 45),    
                 1,
                 new Rectangle(
                     0,
@@ -110,8 +109,8 @@ namespace Asteroid_Belt_Assault
 
             enemyManager = new EnemyManager(
                 spriteSheet,
-                new Rectangle(0, 200, 50, 50),
-                6,
+                new Rectangle(155, 162, 32, 32),
+                1,
                 playerManager,
                 new Rectangle(
                     0,

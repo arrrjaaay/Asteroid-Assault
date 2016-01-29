@@ -90,8 +90,8 @@ namespace Asteroid_Belt_Assault
 
             EnemyShotManager = new ShotManager(
                 texture,
-                new Rectangle(0, 300, 5, 5),
-                    4,
+                new Rectangle(27, 243, 17, 20),
+                    1,
                     2,
                     150f,
                     screenBounds);

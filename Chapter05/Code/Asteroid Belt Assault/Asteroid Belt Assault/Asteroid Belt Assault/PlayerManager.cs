@@ -18,7 +18,7 @@ namespace Asteroid_Belt_Assault
         public int LivesRemaining = 3;
         public bool Destroyed = false;
 
-        private Vector2 gunOffset = new Vector2(25, 10);
+        private Vector2 gunOffset = new Vector2(10, 10);
         private float shotTimer = 0.0f;
         private float minShotTimer = 0.15f;
         private int playerRadius = 10;
@@ -38,8 +38,8 @@ namespace Asteroid_Belt_Assault
 
             PlayerShotManager = new ShotManager(
                 texture,
-                new Rectangle(0, 300, 5, 5),
-                4,
+                new Rectangle(8, 243, 20, 20),
+                1,
                 2,
                 250f,
                 screenBounds);

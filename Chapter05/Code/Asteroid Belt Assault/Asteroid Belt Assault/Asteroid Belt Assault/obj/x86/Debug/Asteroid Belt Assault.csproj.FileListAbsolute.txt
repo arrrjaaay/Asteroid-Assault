@@ -73,8 +73,6 @@ C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\As
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Asteroid Belt Assault.exe
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Asteroid Belt Assault.pdb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Textures\StarFoxSprite.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\song.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\song.wma
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Textures\GameScreen.xnb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Textures\dunk.xnb
