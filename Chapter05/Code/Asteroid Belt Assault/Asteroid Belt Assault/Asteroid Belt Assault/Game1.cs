@@ -76,10 +76,9 @@ namespace Asteroid_Belt_Assault
 
             titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
             spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
-
             gamescreen = Content.Load<Texture2D>(@"Textures\GameScreen");
-            Song song = Content.Load<Song>(@"Sounds\song");  // Put the name of your song in instead of "song_title"
-            MediaPlayer.Play(song);
+
+
 
             starField = new StarField(
                 this.Window.ClientBounds.Width,
@@ -177,6 +176,9 @@ namespace Asteroid_Belt_Assault
             switch (gameState)
             {
                 case GameStates.TitleScreen:
+
+                    SoundManager.PlaySong(SoundManager.titleSong);
+
                     titleScreenTimer +=
                         (float)gameTime.ElapsedGameTime.TotalSeconds;
 
@@ -190,19 +192,20 @@ namespace Asteroid_Belt_Assault
                             playerManager.PlayerScore = 0;
                             resetGame();
                             gameState = GameStates.Playing;
+                            SoundManager.StopSong();
                         }
                     }
                     break;
 
                 case GameStates.Playing:
 
+                    SoundManager.PlaySong(SoundManager.gameSong);
                     starField.Update(gameTime);
                     asteroidManager.Update(gameTime);
                     playerManager.Update(gameTime);
                     enemyManager.Update(gameTime);
                     explosionManager.Update(gameTime);
                     collisionManager.CheckCollisions();
-
                     if (playerManager.Destroyed)
                     {
                         playerDeathTimer = 1.0f;
@@ -238,6 +241,7 @@ namespace Asteroid_Belt_Assault
                     break;
 
                 case GameStates.GameOver:
+                    SoundManager.PlaySong(SoundManager.gameOverSong);
                     playerDeathTimer +=
                         (float)gameTime.ElapsedGameTime.TotalSeconds;
                     starField.Update(gameTime);
@@ -316,6 +320,7 @@ namespace Asteroid_Belt_Assault
                           pericles14.MeasureString("GET REKT NERD").X / 2,
                         50),
                     Color.White);
+
             }
 
 

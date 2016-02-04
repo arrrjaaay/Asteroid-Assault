@@ -69,7 +69,7 @@ namespace Asteroid_Belt_Assault
             {
                 PlayerShotManager.FireShot(
                     playerSprite.Location + gunOffset,
-                    new Vector2(0, -1),
+                    new Vector2(0, 1),
                     true);
                 shotTimer = 0.0f;
             }
@@ -101,6 +101,14 @@ namespace Asteroid_Belt_Assault
             {
                 FireShot();
             }
+            if (keyState.IsKeyUp(Keys.LeftShift))
+            {
+                playerSpeed = 160.0f;
+            }
+            if (keyState.IsKeyDown(Keys.LeftShift))
+            {
+                playerSpeed = 100.0f;
+            }
         }
 
         private void HandleGamepadInput(GamePadState gamePadState)
@@ -128,13 +136,8 @@ namespace Asteroid_Belt_Assault
                 location.X =
                     (playerAreaLimit.Right - playerSprite.Source.Width);
 
-            if (location.Y < playerAreaLimit.Y)
+            if (location.Y > playerAreaLimit.Y)
                 location.Y = playerAreaLimit.Y;
-
-            if (location.Y >
-                (playerAreaLimit.Bottom - playerSprite.Source.Height))
-                location.Y =
-                    (playerAreaLimit.Bottom - playerSprite.Source.Height);
 
             playerSprite.Location = location;
         }

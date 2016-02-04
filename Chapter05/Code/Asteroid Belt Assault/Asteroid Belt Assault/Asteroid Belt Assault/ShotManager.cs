@@ -12,11 +12,11 @@ namespace Asteroid_Belt_Assault
         public List<Sprite> Shots = new List<Sprite>();
         private Rectangle screenBounds;
 
-        private static Texture2D Texture;
-        private static Rectangle InitialFrame;
-        private static int FrameCount;
+        private Texture2D Texture;
+        private Rectangle InitialFrame;
+        private int FrameCount;
         private float shotSpeed;
-        private static int CollisionRadius;
+        private int CollisionRadius;
 
         public ShotManager(
             Texture2D texture,

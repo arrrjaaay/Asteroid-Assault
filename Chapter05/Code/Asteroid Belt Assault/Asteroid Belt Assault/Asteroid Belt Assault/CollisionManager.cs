@@ -63,7 +63,7 @@ namespace Asteroid_Belt_Assault
                         asteroid.CollisionRadius))
                     {
                         shot.Location = offScreen;
-                        asteroid.Velocity += shotToAsteroidImpact;
+                        asteroid.Velocity -= shotToAsteroidImpact;
                     }
                 }
             }

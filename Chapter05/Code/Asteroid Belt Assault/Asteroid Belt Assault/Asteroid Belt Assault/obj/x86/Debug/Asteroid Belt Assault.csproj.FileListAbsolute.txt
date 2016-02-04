@@ -62,8 +62,6 @@ C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\As
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Textures\TitleScreen.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Explosion1.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Explosion2.xnb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Explosion3.xnb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Explosion4.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Shot1.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Shot2.xnb
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Fonts\Pericles14.xnb
@@ -73,6 +71,10 @@ C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\As
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Asteroid Belt Assault.exe
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\obj\x86\Debug\Asteroid Belt Assault.pdb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\song.xnb
-C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\song.wma
 C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Textures\GameScreen.xnb
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\iamsleepless - A Faint Memory.xnb
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Nitro Fun - New Game.xnb
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Pegboard Nerds - Emoji.xnb
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Nitro Fun - New Game.wma
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\Pegboard Nerds - Emoji.wma
+C:\Users\eahscs\Desktop\Asteroid-Assault\Chapter05\Code\Asteroid Belt Assault\Asteroid Belt Assault\Asteroid Belt Assault\bin\x86\Debug\Content\Sounds\iamsleepless - A Faint Memory.wma

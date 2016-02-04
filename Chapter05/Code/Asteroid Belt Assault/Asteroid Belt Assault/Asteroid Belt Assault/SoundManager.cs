@@ -6,6 +6,7 @@ using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Media;
 
 
 namespace Asteroid_Belt_Assault
@@ -21,6 +22,8 @@ namespace Asteroid_Belt_Assault
 
         private static Random rand = new Random();
 
+        public static Song titleSong, gameSong, gameOverSong;
+
         public static void Initialize(ContentManager content)
         {
             try
@@ -34,11 +37,32 @@ namespace Asteroid_Belt_Assault
                         content.Load<SoundEffect>(@"Sounds\Explosion" +
                             x.ToString()));
                 }
+
+                titleSong = content.Load<Song>(@"Sounds\Nitro Fun - New Game");
+                gameSong = content.Load<Song>(@"Sounds\iamsleepless - A Faint Memory");  // Put the name of your song in instead of "song_title"
+                gameOverSong = content.Load<Song>(@"Sounds\Pegboard Nerds - Emoji");
             }
             catch
             {
                 Debug.Write("SoundManager Initialization Failed");
             }
+        }
+
+        public static void PlaySong(Song song)
+        {
+            if (song != null)
+            {
+                if (MediaPlayer.State != MediaState.Playing)
+                {
+                    MediaPlayer.Play(song);
+                    MediaPlayer.Volume = 1.0f;
+                }
+            }
+        }
+
+        public static void StopSong()
+        {
+            MediaPlayer.Stop();
         }
 
         public static void PlayExplosion(int explosion)
