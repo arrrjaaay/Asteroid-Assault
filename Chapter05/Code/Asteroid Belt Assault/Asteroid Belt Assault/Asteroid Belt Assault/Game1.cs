@@ -91,7 +91,7 @@ namespace Asteroid_Belt_Assault
             asteroidManager = new AsteroidManager(
                 10,
                 spriteSheet,
-                new Rectangle(0, 0, 40, 40),
+                new Rectangle(8, 276, 34, 34),
                 1,
                 this.Window.ClientBounds.Width,
                 this.Window.ClientBounds.Height);
@@ -176,7 +176,6 @@ namespace Asteroid_Belt_Assault
             switch (gameState)
             {
                 case GameStates.TitleScreen:
-
                     SoundManager.PlaySong(SoundManager.titleSong);
 
                     titleScreenTimer +=
@@ -198,7 +197,6 @@ namespace Asteroid_Belt_Assault
                     break;
 
                 case GameStates.Playing:
-
                     SoundManager.PlaySong(SoundManager.gameSong);
                     starField.Update(gameTime);
                     asteroidManager.Update(gameTime);
@@ -214,6 +212,7 @@ namespace Asteroid_Belt_Assault
                         if (playerManager.LivesRemaining < 0)
                         {
                             gameState = GameStates.GameOver;
+                            SoundManager.StopSong();
                         }
                         else
                         {
@@ -252,6 +251,7 @@ namespace Asteroid_Belt_Assault
                     if (playerDeathTimer >= playerDeathDelayTime)
                     {
                         gameState = GameStates.TitleScreen;
+                        SoundManager.StopSong();
                     }
                     break;
 

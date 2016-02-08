@@ -21,6 +21,16 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
     </Compile>
+    <Compile Include="Sounds\iamsleepless - A Faint Memory.mp3">
+      <Name>iamsleepless - A Faint Memory</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Sounds\Pegboard Nerds - Emoji.mp3">
+      <Name>Pegboard Nerds - Emoji</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
     <Compile Include="Sounds\Shot2.wav">
       <Name>Shot2</Name>
       <Importer>WavImporter</Importer>
@@ -72,20 +82,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sounds\Nitro Fun - New Game.mp3">
-      <Name>Nitro Fun - New Game</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-    <Compile Include="Sounds\Pegboard Nerds - Emoji.mp3">
-      <Name>Pegboard Nerds - Emoji</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sounds\iamsleepless - A Faint Memory.mp3">
-      <Name>iamsleepless - A Faint Memory</Name>
+    <Compile Include="Sounds\Pegboard Nerds - Pink Cloud.mp3">
+      <Name>Pegboard Nerds - Pink Cloud</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
     </Compile>

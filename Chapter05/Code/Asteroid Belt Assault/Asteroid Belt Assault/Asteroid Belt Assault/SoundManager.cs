@@ -15,7 +15,7 @@ namespace Asteroid_Belt_Assault
     {
         private static List<SoundEffect> explosions = new
             List<SoundEffect>();
-        private static int explosionCount = 4;
+        private static int explosionCount = 2;
 
         private static SoundEffect playerShot;
         private static SoundEffect enemyShot;
@@ -38,9 +38,9 @@ namespace Asteroid_Belt_Assault
                             x.ToString()));
                 }
 
-                titleSong = content.Load<Song>(@"Sounds\Nitro Fun - New Game");
-                gameSong = content.Load<Song>(@"Sounds\iamsleepless - A Faint Memory");  // Put the name of your song in instead of "song_title"
-                gameOverSong = content.Load<Song>(@"Sounds\Pegboard Nerds - Emoji");
+                titleSong = content.Load<Song>(@"Sounds\Pegboard Nerds - Emoji");
+                gameSong = content.Load<Song>(@"Sounds\Pegboard Nerds - Pink Cloud");
+                gameOverSong = content.Load<Song>(@"Sounds\iamsleepless - A Faint Memory");
             }
             catch
             {

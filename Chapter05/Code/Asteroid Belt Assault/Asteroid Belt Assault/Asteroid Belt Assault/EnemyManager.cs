@@ -25,7 +25,7 @@ namespace Asteroid_Belt_Assault
         private float shipSpawnTimer = 0.0f;
         private float shipSpawnWaitTime = 0.5f;
 
-        private float shipShotChance = 1.0f;
+        private float shipShotChance = 0.4f;
 
         private List<List<Vector2>> pathWaypoints =
             new List<List<Vector2>>();
