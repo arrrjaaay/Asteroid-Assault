@@ -35,12 +35,12 @@ namespace Asteroid_Belt_Assault
 
         SpriteFont pericles14;
 
-        private float playerDeathDelayTime = 10f;
+        private float playerDeathDelayTime = 4f;
         private float playerDeathTimer = 0f;
         private float titleScreenTimer = 0f;
         private float titleScreenDelayTime = 1f;
 
-        private int playerStartingLives = 3;
+        private int playerStartingLives = 2;
         private Vector2 playerStartLocation = new Vector2(400, 600);
         private Vector2 scoreLocation = new Vector2(600, 10);
         private Vector2 livesLocation = new Vector2(600, 25);
@@ -78,8 +78,6 @@ namespace Asteroid_Belt_Assault
             spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
             gamescreen = Content.Load<Texture2D>(@"Textures\GameScreen");
 
-
-
             starField = new StarField(
                 this.Window.ClientBounds.Width,
                 this.Window.ClientBounds.Height,
@@ -89,7 +87,7 @@ namespace Asteroid_Belt_Assault
                 new Rectangle(0, 450, 2, 2));
 
             asteroidManager = new AsteroidManager(
-                10,
+                15,
                 spriteSheet,
                 new Rectangle(8, 276, 34, 34),
                 1,
@@ -314,10 +312,10 @@ namespace Asteroid_Belt_Assault
             {
                 spriteBatch.DrawString(
                     pericles14,
-                    "GET REKT NERD!",
+                    "maybe if you were good, you wouldn't have lost",
                     new Vector2(
                         this.Window.ClientBounds.Width / 2 -
-                          pericles14.MeasureString("GET REKT NERD").X / 2,
+                          pericles14.MeasureString("maybe if you were good, you wouldn't have lost").X / 2,
                         50),
                     Color.White);
 

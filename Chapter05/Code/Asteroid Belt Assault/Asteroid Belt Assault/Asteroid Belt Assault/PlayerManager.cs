@@ -11,7 +11,7 @@ namespace Asteroid_Belt_Assault
     class PlayerManager
     {
         public Sprite playerSprite;
-        private float playerSpeed = 160.0f;
+        private float playerSpeed = 180.0f;
         private Rectangle playerAreaLimit;
 
         public long PlayerScore = 0;
@@ -97,17 +97,57 @@ namespace Asteroid_Belt_Assault
                 playerSprite.Velocity += new Vector2(1, 0);
             }
 
-            if (keyState.IsKeyDown(Keys.Space))
-            {
-                FireShot();
-            }
             if (keyState.IsKeyUp(Keys.LeftShift))
             {
-                playerSpeed = 160.0f;
+                playerSpeed = 180.0f;
             }
             if (keyState.IsKeyDown(Keys.LeftShift))
             {
-                playerSpeed = 100.0f;
+                playerSpeed = 120.0f;
+            }
+            if (keyState.IsKeyDown(Keys.Up))
+            {
+                if (shotTimer >= minShotTimer)
+                {
+                    PlayerShotManager.FireShot(
+                        playerSprite.Location + gunOffset,
+                        new Vector2(0, -1),
+                        true);
+                    shotTimer = 0.0f;
+                }
+            }
+            if (keyState.IsKeyDown(Keys.Left))
+            {
+                if (shotTimer >= minShotTimer)
+                {
+                    PlayerShotManager.FireShot(
+                        playerSprite.Location + gunOffset,
+                        new Vector2(-1, 0),
+                        true);
+                    shotTimer = 0.0f;
+                }
+            }
+            if (keyState.IsKeyDown(Keys.Right))
+            {
+                if (shotTimer >= minShotTimer)
+                {
+                    PlayerShotManager.FireShot(
+                        playerSprite.Location + gunOffset,
+                        new Vector2(1, 0),
+                        true);
+                    shotTimer = 0.0f;
+                }
+            }
+            if (keyState.IsKeyDown(Keys.Down))
+            {
+                if (shotTimer >= minShotTimer)
+                {
+                    PlayerShotManager.FireShot(
+                        playerSprite.Location + gunOffset,
+                        new Vector2(0, 1),
+                        true);
+                    shotTimer = 0.0f;
+                }
             }
         }
 
